@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: #f5f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerComentariosPublicos{
+    display: flex;
+    justify-content: center;
+}
+
+.seccion_escribir_comentario {
+    display: flex; 
+    flex-direction: column;   
+    gap: 20px;
+    padding: 30px;
+    background-color: #ffffffe3;
+    border-radius: 12px;
+    width: 380px;      
+    margin-top: 25px;
+    height: 0%; 
+}
+
+.descripcion {
+    width: 100%;
+}
+
+.descripcion h3{
+    margin: 0;
+    font-size: 16px;
+}
+.descripcion p{
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.container_estrellas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+}
+
+
+.calificacion_tittle{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.estrellas_filas{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffffbe;
+    padding: 15px 25px;
+    border: 1px solid #a2a2a7e5;
+    border-radius: 10px;
+}
+
+.estrellas {
+    display: none; /* Escondemos los cuadritos del checkbox */
+}
+
+.estrella-icon {
+    font-size: 18px;
+    color: #ccc; /* Gris cuando están vacías */
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+/* LA MAGIA: Cuando el input está marcado, su label vecino cambia el color del icono */
+.estrellas:checked + label .estrella-icon {
+    color: gold; /* O el color 'aqua' que querías */
+}
+
+.escribir_comentario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_tittle_comentario{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.escritura_comentario{
+    width: 100%;
+    box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+    min-height: 120px;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 10px;
+    font-family: inherit;
+    resize: none;
+}
+
+.escritura_comentario::placeholder{
+    color: #a0aec0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.buttom_public_comentario{
+    padding: 14px;
+    width: 100%; /* Botón a todo lo ancho */
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.container_mostrar_comentarios{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    width: 350px;
+    border-radius: 12px;
+}
+
+.contenedorComentarios{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #ffffffe3;
+}
+
+.estrellasCantidadPublic{
+    display: flex;
+    align-items: center;
+}
+
+.fechaPublic{
+    font-size: 12px;
+    color: gray;
+    margin-left: 10px;
+}
+
+@media(max-width: 600px){
+    .seccion_escribir_comentario {
+        width: 90%;      
+    }
+    .container_mostrar_comentarios{
+        width: 80%;
+        padding: 20px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 1450px){
+    .containerComentariosPublicos{
+        flex-direction: column;
+    }
+    .seccion_escribir_comentario {
+        width: 80%;      
+    }
+    .estrellas_filas{
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+
+
+}

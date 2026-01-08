@@ -4,35 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
 
     <header class="header_container">
-        <img src="logo.png" alt="Logo" style="width: 70px;"/>
-        <h2 class="name_logo">Love Animals</h2>
-        <nav class="navigation_menu">
-            <ul>
-                <li><a href="index.html" class="enlacesMenu">Inicio</a></li>
-                <li><a href="animales.html" class="enlacesMenu">Animales</a></li>
-                <li><a href="accesorios.html" class="enlacesMenu">Accesorios</a></li>
-                <li><a href="servicios.html" class="enlacesMenu">Servicios</a></li>
-                <li><a href="contacto.html" class="enlacesMenu">Contacto</a></li>
-                <li><a href="login.html" class="enlacesMenu">Login</a></li>
-            </ul>
-        </nav>
-
-        <div>
-            <input type="text" class="search_input" name="search_input" placeholder="Buscar..." />
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25313.png" style="width: 20px;" height="20px;"/>
+        <div class="div_logers">
+            <img src="logo.png" alt="Logo" style="width: 70px;"/>
+            <h2 class="name-logo">Love Animals</h2>
         </div>
 
-        <img class="carrito" src="https://media.istockphoto.com/id/1206806317/es/vector/icono-del-carrito-de-compras-aislado-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=sdScWRH_AeHdG6vHzMn8xUHCpe7iM6O1Skgi2lPuKG0=" style="width: 30px;" height="30px;"/>
-        <img class="perfil" src="https://static.vecteezy.com/system/resources/thumbnails/008/442/086/small/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" style="width: 30px;" height="30px;"/>
-        
+
+        <div class="menu">
+            <input type="checkbox" id="check-menu">
+
+            <label for="check-menu" class="btn-abrir">
+                <img src="img_menu_lineas.png" alt="Abrir menú" width="30">
+            </label>
+
+            <nav class="navigation_menu">
+                
+                <ul>
+                    <li class="enlacesMenu"><a href="index.html">Inicio</a></li>
+                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <li class="enlacesMenu"><a href="animales.html">Animales</a></li>
+                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <li class="enlacesMenu"><a href="accesorios.html">Accesorios</a></li>
+                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <li class="enlacesMenu"><a href="servicios.html">Servicios</a></li>
+                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <li class="enlacesMenu"><a href="contacto.html">Contacto</a></li>
+                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <li class="enlacesMenu"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
         
 
+        <div class="container_icons_header">
+            <div class="icons_searchs">
+                <img class="search_icon" src="https://cdn-icons-png.flaticon.com/512/25/25313.png" style="width: 15px;" height="15px;"/>
+                <input type="text" class="search_input" name="search_input" placeholder="Buscar..." />
+            </div>
+            
+            <img class="carrito" src="carrito.png" style="width: 20px;" height="20px;"/>
+            <img class="perfil" src="perfil_vacio.png" style="width: 20px;" height="20px;"/>
+                
+        </div>
+
     </header>
+
+    <main class="container_main_major">
+        <div class="div_separation_divs">
+            <h1 class="name_main">Encuentra a tu nueva mascota ideal hoy.</h1>
+            <p>Criamos y cuidamos animales con amor, estan vacunados y listos para llenar su hogar y tu vorazon de alegria con compañia incondicional.</p>
+
+            <button class="btn_disponibles">Ver Animales Disponibles</button>
+
+            <button class="btn_servicios">Conocer Servicios</button>
+
+            <a href="/comentarios.html" target="_blank">
+                <div class="div_family_cheerful" id="logica_resenias">
+                    <h3>Familias felices - Resenia</h3>
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="animal_presentation">
+            <img src="animal_1.jpg" class="animal_1" alt="animal_1" />
+            <div class="description">
+                <img src="CertificadosLogo.png" alt="CertificadosLogo" class="certificadoLogo"/>
+                <div class="text-container">
+                    <h3 class="textUno">Garantia de salud</h3>
+                    <h3 class="textDos">Veterinaria certificada incluida</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="div_animales_adopcion">
+        <h2>Animales en adopcion</h2>
+        <p>Puedes adoptar mascotas que nos hagan menos gastos</p>
+        <p>Estos animalitos buscan una oportunidad de ser felices.<br>
+            Dales un Lugar en tu hogar y llenalos de amor
+        </p>
+
+        <div class="animalesAdopcion" id="animalesEnAdopcion">
+            
+
+        </div>
+
+    </div>
+
     
 </body>
 </html>
