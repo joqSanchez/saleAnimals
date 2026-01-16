@@ -1,6 +1,441 @@
+body {
+    margin: 0;
+    font-family: Rockwell, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
 .header_container {
-    background-color: #A2C523;
-    padding: 10px 20px;
+    position: relative;
+    background-color: #f0723773;
+    border-bottom: 1px solid rgb(113, 211, 195);
+    
+    border-radius: 4px;
+    padding: 10px 25px;
+    gap: 10px;
+
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: space-between;
+    /* Asegura que el padding no sume ancho extra */
+    box-sizing: border-box;
+    width: 100%;
+  
+}
+
+.div_logers{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.name-logo{
+    margin: 0; /* Elimina el margen por defecto de los h2 que empuja el header */
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(29, 133, 127);
+    white-space: nowrap; /* Evita que el nombre se parta en dos líneas */  
+}
+
+
+
+.navigation_menu {
+    margin: 0 auto; 
+}
+
+.navigation_menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* LI 
+.enlacesMenu{
+      
+}
+*/
+
+.enlacesMenu a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(29, 133, 127);
 
 }
+
+.enlacesMenu a:hover{
+    font-weight: bold;
+    color: #d6a646;
+    transition: 0.7s ease;
+}
+
+/* input */
+#check-menu{
+    display: none;
+}
+
+/* label */
+.btn-abrir{
+    display: none;
+}
+
+/* iconos y busqueda */
+.container_icons_header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.enlace_inicio_resenia{
+    text-decoration: none;
+    
+}
+
+.icons_searchs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: text;
+    padding: 4px 8px;
+    width: 200px;
+}
+
+.search_icon {
+    opacity: 0.6;
+}
+
+.search_input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+
+
+.carrito, .perfil {
+    padding: 4px 7px;
+    border-radius: 12px;
+    border: 1px solid #005B70;
+    cursor: pointer;
+}
+
+/* FIN HEADER */
+
+.container_main_major {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: #f7f8f8ec;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 6px 8px 10px rgba(70, 41, 41, 0.1);
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+}
+
+/* PRIMER DIV */
+.div_separation_divs{
+    padding: 15px 20px;
+    
+}
+
+.name_main{
+    font-size: 35px;
+    color: rgba(32, 30, 30, 0.829);
+    font-weight: bold;
+}
+
+.container_main_major p {
+    font-size: 15px;
+}
+
+.btn_servicios, .btn_disponibles{
+    padding: 13px;
+    background-color: rgba(148, 233, 114, 0.685);
+    color: #080608;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 18px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.div_family_cheerful{
+    background-color: #f3f4f55b;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.enlace_inicio_resenia{
+    list-style: none;
+    text-decoration: none;
+    color: #3d3c3c;
+    font-weight: bold;
+}
+
+#porcentajeReseniasInicio{
+    width: fit-content;
+}
+
+/* SEGUNDO DIV */
+.animal_presentation{
+    position: relative;
+    width: 100%;
+
+}
+
+.animal_presentation img.animal_1 {
+    display: block;
+    border-radius: 15px; 
+    width: 100%; 
+    height: 25rem; /* Aumenté un poco la altura para que luzca mejor */
+    object-fit: cover; /* Evita que la foto del animal se estire feo */
+}
+
+.description {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    /* Posición: abajo a la izquierda con un poco de margen */
+    bottom: 20px;
+    left: 20px;
+    
+    background-color: white; /* Color base blanco como tu ejemplo */
+    background-color: rgba(255, 255, 255, 0.9); /* O un blanco con transparencia */
+    border-radius: 50px; /* Bordes muy redondeados tipo "píldora" */
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    /* Evita que la caja sea más ancha que la imagen del animal */
+    max-width: 85%; 
+}
+
+/* Estilo para el logo circular verde */
+.description img {
+    width: 45px ; /* Tamaño fijo para el icono */
+    height: 45px ;
+    background-color: #d1f7d6; /* Verde clarito de fondo */
+    border-radius: 50%; /* Lo hace un círculo perfecto */
+    padding: 8px; /* Espacio para que el escudo no toque los bordes */
+    object-fit: contain;
+}
+
+.description .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container .textUno {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+    color: #333;
+}
+
+.text-container .textDos {
+    font-size: 13px;
+    margin: 0;
+    color: #777;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1450px){
+    .div_logers {
+        order: 1; /* Logo a la izquierda */
+    }
+    .header_container {
+        /* Aseguramos que los 3 bloques se repartan bien */
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        order: 3;
+    }
+    
+    .navigation_menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #B2D8EB;
+        z-index: 999;
+
+        max-height: 0;
+        overflow: hidden;
+        opacity: 1;
+
+        transition: max-height 1.6s ease-in-out, opacity 1.9s ease;
+    }
+
+    .navigation_menu ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .btn-abrir{
+        display: block;
+        cursor: pointer;
+    }
+
+    #check-menu:checked ~ .navigation_menu{
+        display: block;
+        opacity: 1;
+        max-height: 500px;
+    }
+
+    /* el +  y ~ son cosas distintas investigar cuando se vaya a usar cada una y tambien cuando se usa ,(coma) o solo el espacio*/
+
+    .container_icons_header {
+        order: 2;
+        margin: 0;
+        gap: 15px;
+    }
+
+    .description {
+        /* Posición: abajo a la izquierda con un poco de margen */
+        bottom: 20px;
+        left: 20px;
+        
+        background-color: white; /* Color base blanco como tu ejemplo */
+        background-color: rgba(255, 255, 255, 0.9); /* O un blanco con transparencia */
+        border-radius: 50px; /* Bordes muy redondeados tipo "píldora" */
+        padding: 5px 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        
+        /* Evita que la caja sea más ancha que la imagen del animal */
+        max-width: 70%; 
+    }
+
+    .description .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-container .textUno {
+        font-size: 14px;
+        font-weight: 800;
+        margin: 0;
+        color: #333;
+    }
+
+    .text-container .textDos {
+        font-size: 11px;
+        margin: 0;
+        color: #777;
+        font-weight: 500;
+    }
+
+    .animal_presentation img.animal_1{
+        height: 20rem;
+    }
+}
+
+@media (max-width: 1190px) {
+
+    .container_main_major{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media(max-width: 870px){
+    .container_main_major{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+/* --- Media Queries (Ajustes para móviles) --- */
+
+@media (max-width: 768px) {
+
+    .container_icons_header{
+        padding: 30px;
+    }
+
+    .container_icons_header .icons_searchs{
+        display: none;
+    }
+
+    .animal_presentation img.animal_1 {
+        height: 18rem; /* Imagen más pequeña en tablets */
+    }
+    
+    .description {
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 15px;
+    }
+
+    .text-container .textUno {
+        font-size: 14px;
+    }
+
+    .text-container .textDos {
+        font-size: 11px;
+    }
+    
+    .description img {
+        width: 35px ;
+        height: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .description {
+        /* En pantallas muy pequeñas, centramos la etiqueta */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        gap: 8px;
+    }
+}
+
+
+@media(max-width: 280px){ 
+    .animal_presentation img{
+        width: 100%;
+        height: 1rem;
+    }
+
+    .description {
+        padding: 2px 4px;
+        left: 50%; /* Centra la etiqueta en móviles */
+        width: 100%; /* Evita que sea más ancha que la foto */
+        
+    }
+    
+    .text-container .textUno {
+        font-size: 13px; /* Un poco más pequeño para que quepa */
+    }
+
+    .text-container .textDos{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
 

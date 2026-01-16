@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comentarios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Pagina Comentarios</title>
+</head>
+<body>
+
+    <header class="div_header">
+        
+        <div id="porcentajeResenias"></div>
+        
+        <select id="fechaEstadoComentario" >
+            <option value="masReciente" selected>Mas recientes</option>
+            <option value="masAntiguos">Mas antiguos</option>
+        </select>
+        
+    </header>
+
+    <div class="containerComentariosPublicos">
+
+        <div class="seccion_escribir_comentario">
+
+            <div class="descripcion">
+                <h3>Deja tu resenia</h3>
+                <p>Comparte tu experencia con la comunidad.</p>
+            </div>
+
+            <div class="container_estrellas">
+                <h2 class="calificacion_tittle">Calificacion</h2>
+
+                <div class="estrellas_filas">
+                    <input type="checkbox" class="estrellas" id="estrellas1" />
+                    <label for="estrellas1">
+                        <i class="fa-solid fa-star estrella-icon"></i>
+                    </label>
+
+                    <input type="checkbox" class="estrellas" id="estrellas2" />
+                    <label for="estrellas2">
+                        <i class="fa-solid fa-star estrella-icon"></i>
+                    </label>
+
+                    <input type="checkbox" class="estrellas" id="estrellas3" />
+                    <label for="estrellas3">
+                        <i class="fa-solid fa-star estrella-icon"></i>
+                    </label>
+
+                    <input type="checkbox" class="estrellas" id="estrellas4" />
+                    <label for="estrellas4">
+                        <i class="fa-solid fa-star estrella-icon"></i>
+                    </label>
+
+                    <input type="checkbox" class="estrellas" id="estrellas5" />
+                    <label for="estrellas5">
+                        <i class="fa-solid fa-star estrella-icon"></i>
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="escribir_comentario">
+                <label for="comentario" class="label_tittle_comentario">Tu comentario:</label>
+                <textarea id="comentario" class="escritura_comentario" placeholder="Cuentanos que te parecio"></textarea>
+
+                <button onclick="recibirComentario()" class="buttom_public_comentario" >Publicar resenia</button>
+            </div>
+
+        </div>
+
+        <div class="container_mostrar_comentarios"></div>
+
+    </div>
+
+
+    <script src="comentarios.js"></script>
+    
+</body>
+</html>

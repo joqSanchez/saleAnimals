@@ -1,0 +1,186 @@
+/* RESET Y BASE (MANTENIENDO TU BODY) */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* HEADER - MANTENIENDO TU ESTRUCTURA */
+.div_header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px; 
+    box-sizing: border-box; 
+}
+
+#porcentajeResenias {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+#porcentajeResenias .tittle_Comentario{
+
+    position: absolute;
+
+    top: 5px;
+
+    margin: 0;
+
+    font-size: 1.5rem;
+
+}
+
+#porcentajeResenias h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1a202c;
+}
+
+.div_header select {
+    width: 140px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    outline: none;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.containerComentariosPublicos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px; 
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* SECCIÓN ESCRIBIR (IZQUIERDA) */
+.seccion_escribir_comentario {
+    display: flex; 
+    flex-direction: column;   
+    gap: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 400px; 
+    flex-shrink: 0; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.descripcion h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.descripcion p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+/* ESTRELLAS (TU LÓGICA DE CHECKBOX) */
+.estrellas_filas {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px 25px;
+    border: 1px solid #e2e2e7;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.estrellas { display: none; } /* Oculta tus inputs como pediste */
+
+.estrella-icon {
+    font-size: 22px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Esto hace que brillen al marcarlas */
+.estrellas:checked + label .estrella-icon { 
+    color: #f4b400; 
+}
+
+/* TEXTAREA Y BOTÓN */
+.escritura_comentario {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 120px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 10px;
+    font-family: inherit;
+    resize: none;
+    margin-top: 10px;
+}
+
+.buttom_public_comentario {
+    padding: 14px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttom_public_comentario:hover {
+    background-color: #0056b3;
+}
+
+/* SECCIÓN MOSTRAR (DERECHA) */
+.container_mostrar_comentarios {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 550px;
+}
+
+/* Tarjetas que crea tu JS */
+.contenedorComentarios {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+/* RESPONSIVIDAD */
+@media(max-width: 850px) {
+    .containerComentariosPublicos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion_escribir_comentario, 
+    .container_mostrar_comentarios {
+        width: 100%;
+        max-width: 450px;
+    }
+}
