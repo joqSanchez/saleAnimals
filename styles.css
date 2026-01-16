@@ -11,6 +11,7 @@ body {
     
     border-radius: 4px;
     padding: 10px 25px;
+    gap: 10px;
 
     display: flex;
     flex-wrap: nowrap; 
@@ -87,6 +88,11 @@ body {
     gap: 30px;
 }
 
+.enlace_inicio_resenia{
+    text-decoration: none;
+    
+}
+
 .icons_searchs {
     display: flex;
     align-items: center;
@@ -161,8 +167,26 @@ body {
     font-weight: bold;
     border-radius: 18px;
     margin: 10px;
+    padding-left: 10px;
 }
 
+.div_family_cheerful{
+    background-color: #f3f4f55b;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.enlace_inicio_resenia{
+    list-style: none;
+    text-decoration: none;
+    color: #3d3c3c;
+    font-weight: bold;
+}
+
+#porcentajeReseniasInicio{
+    width: fit-content;
+}
 
 /* SEGUNDO DIV */
 .animal_presentation{

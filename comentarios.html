@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="comentarios.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Document</title>
+    <title>Pagina Comentarios</title>
 </head>
 <body>
-    <div class="div_header">
-        <button class="fechaEstadoComentario"></button>
 
-    </div>
-
+    <header class="div_header">
+        
+        <div id="porcentajeResenias"></div>
+        
+        <select id="fechaEstadoComentario" >
+            <option value="masReciente" selected>Mas recientes</option>
+            <option value="masAntiguos">Mas antiguos</option>
+        </select>
+        
+    </header>
 
     <div class="containerComentariosPublicos">
-        
+
         <div class="seccion_escribir_comentario">
 
             <div class="descripcion">
@@ -63,7 +69,6 @@
             </div>
 
         </div>
-
 
         <div class="container_mostrar_comentarios"></div>
 

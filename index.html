@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Document</title>
+    <title>pagina Principal</title>
 </head>
 <body>
 
@@ -47,7 +47,7 @@
         <div class="container_icons_header">
             <div class="icons_searchs">
                 <img class="search_icon" src="https://cdn-icons-png.flaticon.com/512/25/25313.png" style="width: 15px;" height="15px;"/>
-                <input type="text" class="search_input" name="search_input" placeholder="Buscar..." />
+                <input type="text" class="search_input" name="search_input" alt="Buscar" placeholder="Buscar..." />
             </div>
             
             <img class="carrito" src="carrito.png" style="width: 20px;" height="20px;"/>
@@ -62,13 +62,15 @@
             <h1 class="name_main">Encuentra a tu nueva mascota ideal hoy.</h1>
             <p>Criamos y cuidamos animales con amor, estan vacunados y listos para llenar su hogar y tu vorazon de alegria con compañia incondicional.</p>
 
-            <button class="btn_disponibles">Ver Animales Disponibles</button>
+            <button type="button" class="btn_disponibles">Ver Animales Disponibles → </button>
 
-            <button class="btn_servicios">Conocer Servicios</button>
+            <button type="button" class="btn_servicios">Conocer Servicios</button>
 
-            <a href="/comentarios.html" target="_blank">
+            <a href="/comentarios.html" class="enlace_inicio_resenia" target="_blank">
+                
                 <div class="div_family_cheerful" id="logica_resenias">
-                    <h3>Familias felices - Resenia</h3>
+                    <p>Familias felices - Resenia</p>
+                    <div id="porcentajeReseniasInicio"></div>
 
                 </div>
 
@@ -95,12 +97,13 @@
             Dales un Lugar en tu hogar y llenalos de amor
         </p>
 
-        <div class="animalesAdopcion" id="animalesEnAdopcion">
-            
+        <div class="animalesAdopcion" id="animalesEnAdopcion">      
 
         </div>
 
     </div>
+
+    <script src="inicio.js"></script>
 
     
 </body>
