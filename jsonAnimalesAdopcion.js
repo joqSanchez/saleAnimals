@@ -8,7 +8,7 @@ export const animalesRescatados = [
         raza: "Golden Retriever",
         caracteristicas: "2 Anios - Jugueton",
         genero: "Macho",
-        historia: "Fue rescatado en la calle. Es un perro lleno de energias",
+        historia: "Fue rescatado en la calle. Es un perro lleno de energias.",
         URL: "EnAdopcion/adopcionUno.png"
     },
     {
@@ -17,7 +17,8 @@ export const animalesRescatados = [
         raza: "Siames",
         caracteristicas: "3 Anios - Jugueton - Arania mucho",
         genero: "Hembra",
-        historia: "Lo rescatamos de una casa que segun llamados de vecinos lo maltrataban",
+        actitudes:"Le gusta molestar para que jueguen con el, es muy atento",
+        historia: "Lo rescatamos de una casa que segun llamados de vecinos lo maltrataban.",
         URL: "EnAdopcion/adopcionDos.png"
     },
     {
@@ -27,7 +28,7 @@ export const animalesRescatados = [
         caracteristicas: "1 Anio - Tranquilo - Blanco con negro",
         genero: "Macho",
         historia: "Encontrado en un parque local. Busca un hogar con mucho espacio para saltar.",
-        URL: "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?q=80&w=500&auto=format&fit=crop"
+        URL: "https://media.istockphoto.com/id/959866606/es/foto/conejo-4-meses-de-edad-sentada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=Yvx7yxd2K873-lukwWfO5GSXBx9qYLxt89XDQeRUSpQ="
     },
     {
         nombre: "Luna",
@@ -36,7 +37,7 @@ export const animalesRescatados = [
         caracteristicas: "4 Anios - Muy olfateadora - Cariñosa",
         genero: "Hembra",
         historia: "Su dueño anterior se mudó y no pudo llevarla. Es excelente con niños.",
-        URL: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?q=80&w=500&auto=format&fit=crop"
+        URL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8lQyxnZw1ypaNMz4_FDI6skwwjChPEnEow&s"
     },
     {
         nombre: "Ciro",
@@ -45,7 +46,7 @@ export const animalesRescatados = [
         caracteristicas: "5 Meses - Canta mucho - Color amarillo vibrante",
         genero: "Macho",
         historia: "Nacido en cautiverio responsable, busca una jaula espaciosa y compañía.",
-        URL: "https://images.unsplash.com/photo-1606567595384-a094e3d0758a?q=80&w=500&auto=format&fit=crop"
+        URL: "https://static9.depositphotos.com/1594920/1087/i/450/depositphotos_10872280-stock-photo-yellow-canary-serinus-canaria-on.jpg"
     },
     {
         nombre: "Nut",
@@ -54,7 +55,7 @@ export const animalesRescatados = [
         caracteristicas: "2 Anios - Muy rapida - Le encantan las nueces",
         genero: "Hembra",
         historia: "Rescatada tras caer de un nido cuando era bebé. Ya está rehabilitada.",
-        URL: "https://images.unsplash.com/photo-1507332132684-bc91a02829c2?q=80&w=500&auto=format&fit=crop"
+        URL: "https://media.istockphoto.com/id/177741654/es/foto/ardilla-gris-aislado-en-blanco.jpg?s=612x612&w=0&k=20&c=prZiL957h1TY7KLX28s5iqqoCZTLE5ePjXkwWU42c5w="
     },
     {
         nombre: "Misi",
@@ -63,7 +64,7 @@ export const animalesRescatados = [
         caracteristicas: "2 Anios - Dormilona - Muy mansa",
         genero: "Hembra",
         historia: "Vivía en una colonia de gatos callejeros hasta que decidió entrar a una casa.",
-        URL: "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?q=80&w=500&auto=format&fit=crop"
+        URL: "https://www.shutterstock.com/image-photo/classic-tabby-house-cat-sitting-600nw-2508785375.jpg"
     },
     {
         nombre: "Rex",
@@ -72,7 +73,7 @@ export const animalesRescatados = [
         caracteristicas: "5 Anios - Guardian - Obediente",
         genero: "Macho",
         historia: "Ex perro de trabajo jubilado. Busca un hogar tranquilo para descansar.",
-        URL: "https://images.unsplash.com/photo-1589944173179-4fe5ca34ca33?q=80&w=500&auto=format&fit=crop"
+        URL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6OgmSXyVvmWJ4hzgeZdUCsFPNjU2uiunFzg&s"
     },
     {
         nombre: "Pipo",
@@ -81,7 +82,7 @@ export const animalesRescatados = [
         caracteristicas: "1 Anio - Silba melodias - Sociable",
         genero: "Macho",
         historia: "Fue entregado por una familia que no tenía tiempo para su cuidado social.",
-        URL: "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?q=80&w=500&auto=format&fit=crop"
+        URL: "https://www.zooplus.es/magazine/wp-content/uploads/2019/09/fotolia_99446376.webp"
     },
     {
         nombre: "Bombón",
@@ -90,7 +91,7 @@ export const animalesRescatados = [
         caracteristicas: "8 Meses - Muy peludo - Timido",
         genero: "Hembra",
         historia: "Rescatada de una tienda de mascotas que cerró. Necesita cepillado diario.",
-        URL: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=500&auto=format&fit=crop"
+        URL: "https://cdn0.expertoanimal.com/es/razas/8/6/6/conejo-cabeza-de-leon_668_0_orig.jpg"
     },
     {
         nombre: "Bolt",
@@ -99,7 +100,7 @@ export const animalesRescatados = [
         caracteristicas: "1 Anio - Curiosa - Siempre alerta",
         genero: "Macho",
         historia: "Encontrada con una patita lastimada, ahora corre perfectamente.",
-        URL: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=500&auto=format&fit=crop"
+        URL: "https://secem.es/sites/default/files/styles/max_325x325/public/mamiferos/082_Sciurus_vulgaris_vulgaris%20copia.jpg?itok=HJTHOiT7"
     }
     
 ]

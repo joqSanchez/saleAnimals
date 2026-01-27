@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+.div_principal{
+    width: 500px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.historiaMascota{
+    background: linear-gradient( to bottom, #f8f9fa, #0c0c0c); 
+    border-radius: 12px;
+}
+
+.card_Animal{
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card_Animal h1{
+    text-align: left;
+}
+
+.card_Animal img{
+    width: 300px;
+    display: block;
+    margin: 0 auto; /* Para centrarla */
+    mix-blend-mode: multiply; /* <--- ¡ESTO quita el fondo blanco! */
+}
+
+
+.card_Informacion{
+    background: white; 
+    padding: 25px;
+    border-radius: 30px; /* Más redondeado se ve más amigable */
+    height: auto; /* Deja que crezca según el contenido */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Una sombra suave da profundidad */
+
+}
+
+.card_Informacion p {
+    font-weight: bold;
+    color: black;
+}
+
+.containers-information{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.div_genero{
+    background-color: aliceblue;
+    padding: 1px 15px;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.div_breed{
+    background-color: aliceblue;
+    padding: 1px 15px;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.history-information{
+    margin-top: 8rem;
+}
+
+.parrafo-history{
+    background-color: #ecf0f3;
+    padding: 20px;
+    border: 1px dashed #717274;
+    border-radius: 14px;
+}
+.Characteristics-information{
+    margin-top: 40px;
+}
+
+.tag-caracteristica {
+    background-color: #fce7c9; /* Color cremita */
+    color: #ec7b10;            /* Texto naranja */
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: 1px solid #fbdcb0;
+    margin-right: 5px;
+    display: inline-block; /* Para que el padding funcione bien */
+}
+
+.contenedor-tags {
+    display: flex;
+    flex-wrap: wrap; /* Si son largas, saltan de línea */
+    gap: 10px;       /* Espacio entre cada burbuja */
+    margin-top: 10px;
+}
+
+.div-adoptMe{
+    border-top: 1px solid rgb(228, 228, 223);
+    margin-top: 40px;
+    padding-top: 20px;
+}

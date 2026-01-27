@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+.containerMajor{
+    padding: 20px 30px;
+    text-align: center;
+    background-color: rgb(194, 250, 250);
+}
+
+.divAdopcion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card_animal_adopcion{
+    background-color: white;
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden; /* Corta las esquinas de la imagen si tienen radio */
+    box-shadow: 5px 6px 16px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+    padding: 15px 20px;
+    text-align: left; /* El texto dentro de la tarjeta a la izquierda */
+}
+
+.card_animal_adopcion img {
+    background-color: white;
+    width: 80%;      /* Ocupa todo el ancho de la tarjeta (250px) */
+    height: 200px;    /* Altura fija para que todas las tarjetas midan lo mismo */
+    /*object-fit: cover;  Recorta la imagen para que no se estire feo */
+}
+
+.card_animal_adopcion h3, .card_animal_adopcion p {
+    padding: 0 15px;  /* Espacio a los lados del texto */
+}

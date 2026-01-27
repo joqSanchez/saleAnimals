@@ -138,7 +138,7 @@ body {
     border-radius: 18px;
     box-shadow: 6px 8px 10px rgba(70, 41, 41, 0.1);
     margin: auto;
-    width: 50%;
+    width: 60%;
     margin-top: 100px;
 }
 
@@ -158,7 +158,7 @@ body {
     font-size: 15px;
 }
 
-.btn_servicios, .btn_disponibles{
+.btn_disponibles{
     padding: 13px;
     background-color: rgba(148, 233, 114, 0.685);
     color: #080608;
@@ -170,9 +170,21 @@ body {
     padding-left: 10px;
 }
 
+.btn_servicios{
+    padding: 13px;
+    background-color: rgba(255, 255, 255, 0.685);
+    color: #080608;
+    border: none;
+    font-size: 13px;
+    border: 1px solid #847593;
+    font-weight: bold;
+    border-radius: 18px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
 .div_family_cheerful{
-    background-color: #f3f4f55b;
-    width: fit-content;
+    width: 40%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -182,6 +194,7 @@ body {
     text-decoration: none;
     color: #3d3c3c;
     font-weight: bold;
+    width: 40%;
 }
 
 #porcentajeReseniasInicio{
@@ -253,6 +266,411 @@ body {
     font-weight: 500;
 }
 
+.div_animales_adopcion{
+    background-color: rgb(242, 243, 243);
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px 20px;
+    width: 60%;
+    border-radius: 12px;
+}
+
+/* El contenedor que tiene el ID animalesEnAdopcion */
+.animalesAdopcion {
+    display: flex;
+    flex-wrap: wrap; /* Por si hay más de 3, que bajen a la siguiente fila */
+    justify-content: center;
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+}
+
+/* La tarjeta individual */
+.div_mascotas_adopcion {
+    display: flex; /* Para que la tarjeta también use flex */
+    width: 280px; /* Ancho fijo para todas */
+}
+
+.card_animal {
+    background-color: rgb(226, 253, 152);
+    display: flex;
+    flex-direction: column; /* Contenido uno debajo del otro */
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.contenedor_img{
+    background-color: white;
+}
+
+.contenedor_img img {
+    width: 80%;
+    height: 250px; /* Alto fijo para todas las fotos */
+    margin-left: 20px;
+
+}
+
+.info_animal {
+    padding: 15px;
+    flex-grow: 1; /* Esto hace que el área de texto ocupe todo el espacio sobrante */
+}
+
+.historia {
+    word-wrap: break-word;
+    font-size: 0.9em;
+}
+
+.conocerAnimal{
+    background-color: #ecf1f3;
+    border: 1px dashed #b0b0b1;
+    color: black;
+    border-radius: 18px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+/* Enlace a la pagina de adopcion */
+.pagina_Adopcion{
+    color: rgb(13, 228, 85);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 700px;
+}
+
+/* Contenedor de los estilos de los nuevos cachorros */
+
+.ContainerNuevosCachorros{
+    margin-top: 20px;
+    padding: 40px 20px; /* Un poco más de aire arriba y abajo */
+    background-color: #fdf6f6;
+    display: flex;
+    flex-direction: column; /* Alinea el título arriba y las fotos abajo */
+    align-items: center;    /* Centra todo el contenido */
+}
+
+/* Texto inicial*/
+.nuevosCachorros{
+    max-width: 600px; /* Es mejor que usar % para que no se vea raro en móvil */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.containerNewPuppies{
+    width: 100%;       /* ¡Importante! Usa todo el ancho disponible */
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardAnimalsNew{
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+.card_new_puppies{
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.card_new_puppies img{
+    width: 250px;
+    border-radius: 12px;
+}
+
+/* Enlace ver detalles creado en js */
+.enlaceVerDetalles{
+    text-decoration: none;
+    font-size: 14px;
+    color: #080608;
+    background-color: #e3e9eb;
+    padding: 4px 20px;
+    border-radius: 10px;
+}
+
+
+/* estilos de los cachorros de detailsAnimals.html */
+
+/* 1. El contenedor general */
+#div_principal {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 20px;
+
+}
+
+/* 2. La tarjeta individual */
+.card_NewAnimals {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card_NewAnimals:hover {
+    transform: translateY(-5px); /* Un efecto sencillo al pasar el mouse */
+}
+
+/* 3. El contenedor de la imagen/detalles */
+.details_animals_new {
+    width: 320px;
+}
+
+.details_animals_new img {
+    width: 250px;       /* Que ocupe todo el ancho de la tarjeta */
+    height: 250px;     /* Altura fija para que todas las tarjetas midan igual */
+    border-radius: 15px 15px 0 0; /* Solo redondea las esquinas de arriba */
+}
+
+.details_animals_new p{
+    font-weight: 600;
+}
+
+
+/* contenedor de los productos en venta  */
+
+.container_featured_products{
+    background-color: #e9f3f8e5;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Alinea el título arriba y las fotos abajo */
+    align-items: center;    /* Centra todo el contenido */
+}
+
+.textInitial{
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.button_acordeon button{
+    border-radius: 6px;
+    border: none;
+    width: 20px;
+    padding: 2px;
+    background-color: #f5e0f5;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#div_productos_sale{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card_store_products {
+    background-color: #e9edee;
+    width: 270px;
+    padding: 15px;
+    border-radius: 14px;
+}
+
+.card_store_products h2{
+    font-size: 16px;
+    text-align: center;
+}
+.card_store_products img{
+    width: 270px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.buttonCompra{
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    background-color: #64ff79;
+    width: 25px;
+}
+
+
+/* Este es el fondo oscuro que cubre toda la pantalla */
+.panel_button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
+    display: flex;
+    justify-content: center; /* Centra horizontal */
+    align-items: center;     /* Centra vertical */
+    z-index: 1000;           /* Asegura que esté por encima de todo */
+}
+
+/* Este es el cuadrito blanco donde están los botones */
+.second_div_panel_buttom {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    min-width: 300px;
+    
+    /* Agrega esto para que el loader y el texto se vean bien */
+    display: flex;
+    flex-direction: column; /* Pone los elementos uno debajo de otro */
+    align-items: center;    /* Centra el loader horizontalmente */
+    justify-content: center;
+    gap: 20px;              /* Da espacio entre el círculo y el texto */
+}
+
+/* Un pequeño ajuste para el loader para que no sea tan gigante */
+.loader {
+    border: 10px solid #f3f3f3; /* Bajé un poco el grosor */
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 60px;               /* Un tamaño de 60px suele verse mejor en paneles */
+    height: 60px;
+    animation: spin 1s linear infinite; /* Un poco más rápido para que se vea fluido */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button_close_panel{
+    padding: 3px;
+    border-radius: 6px;
+    border: none;
+    width: 30px;
+    font-size: 18px;
+    background-color: #d3eefc;
+    cursor: pointer;
+}
+
+/* Containers Animals services */
+
+.major_communication_appointment{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f3f1ee;
+}
+
+.veterinarianImg{
+    width: 200px;
+}
+
+.container_element_services{
+    background-image: url('/imgFondo.png');
+    background-size: contain; /* Ajusta la imagen para que quepa entera */
+    background-repeat: no-repeat; /* Evita que la imagen se duplique */
+    background-position: right center;
+
+    padding: 80px 40px;
+    border-radius: 15px;
+    background-size: cover; 
+    background-position: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.container_element_services h2{
+    color: white;
+
+}
+
+.container_element_services p{
+    color: white;
+    text-align: left;
+}
+
+.button_schedule_appointment{
+    text-decoration: none;
+    color: #080608;
+    background-color: #7ef88f;
+    border-radius: 12px;
+    padding: 6px;
+    font-weight: bold;
+    margin-left: 80%;
+}
+
+.nav_animals_services{
+    margin-top: 3rem;
+}
+
+.ul_animals_services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.ul_animals_services a{
+/* Fondo oscuro con mucha transparencia (0.2) */
+    background-color: rgba(255, 255, 255, 0.1); 
+    
+    /* Un borde sutil para definir la forma */
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    
+    /* El desenfoque del fondo (opcional, da el efecto de vidrio real) */
+    backdrop-filter: blur(4px);
+    
+    /* Estética general */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 30px;
+    border-radius: 20px; /* Bordes muy redondeados como en tu imagen */
+    font-weight: 500;
+    font-size: 14px;
+    
+    /* Para que el ancho funcione y se alineen bien */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio para el icono que pongas luego */
+}
+
+/* The location at the end of the main page*/
+.footer-end-pages-major {
+    background-color: #f8f9fa; /* Un gris muy claro como el de la imagen */
+    padding: 60px 40px;
+    border-top: 1px solid #eee;
+}
+
+.footer-information {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.divs-sub-footer p{
+    color: #444444;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.four-words {
+    display: flex;
+    /* Esto empuja el primer elemento a la izquierda y el segundo a la derecha */
+    justify-content: space-between; 
+    align-items: center; /* Para que el texto y los enlaces estén alineados a la misma altura */
+    
+    padding-top: 20px;
+    border-top: 1px solid #ddd; /* Opcional: una línea divisoria como en la imagen */
+    margin-top: 20px;
+
+    color: #444444;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
 
 @media (max-width: 1450px){
     .div_logers {
@@ -345,6 +763,16 @@ body {
     .animal_presentation img.animal_1{
         height: 20rem;
     }
+
+    .container_element_services{
+        padding: 20px;
+    }
+
+    /* Buttom schedule appointment*/
+    .button_schedule_appointment{
+        margin-left: 70%;
+    }
+
 }
 
 @media (max-width: 1190px) {
@@ -354,6 +782,38 @@ body {
         width: 90%;
         height: auto;
     }
+
+    .pagina_Adopcion{
+        color: rgb(13, 228, 85);
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 0;
+    }
+
+    /* Boton de conocer al animal */
+    .conocerAnimal{
+        background-color: #ecf1f3;
+        border: 1px dashed #b0b0b1;
+        color: black;
+        border-radius: 18px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+
+
+    /* Footer Information*/
+    .footer-information{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #main-img img{
+        height: 90px;
+    }
+
+
 }
 
 @media(max-width: 870px){
@@ -361,6 +821,19 @@ body {
         flex-direction: column;
         width: 90%;
         height: auto;
+    }
+
+
+    /* schedule apointment button*/
+    .button_schedule_appointment{
+        text-align: center;
+        margin-left: 4rem;
+    }
+
+    /* UL animals services*/
+    .ul_animals_services{
+        display: flex;
+        justify-content: space-between;
     }
 
 }
@@ -399,6 +872,20 @@ body {
         width: 35px ;
         height: 35px;
     }
+
+    /* Buttom schedule appointment*/
+
+    .button_schedule_appointment{
+        margin-left: 30%;
+        backdrop-filter: blur(4px);
+        background-color: #d3d2d2;
+        opacity: 0.6;
+        border: 1.5px solid rgb(93, 95, 95);
+    }
+
+    .button_schedule_appointment{
+        margin-left: 25px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -409,6 +896,29 @@ body {
         width: 90%;
         gap: 8px;
     }
+
+    .card_animal{
+        height: 400px;
+    }
+
+    .contenedor_img img{
+        width: 80%;
+        height: 180px; /* Alto fijo para todas las fotos */
+    }
+    .info_animal{
+        height: auto;
+        overflow-y: auto;
+    }
+
+    /* Boton de concoer al animal */
+    .conocerAnimal{
+        padding: 3px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+
+
 }
 
 
@@ -432,6 +942,8 @@ body {
     .text-container .textDos{
         font-size: 10px;
     }
+
+
 
 }
 

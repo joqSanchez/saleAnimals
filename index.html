@@ -62,7 +62,7 @@
             <h1 class="name_main">Encuentra a tu nueva mascota ideal hoy.</h1>
             <p>Criamos y cuidamos animales con amor, estan vacunados y listos para llenar su hogar y tu vorazon de alegria con compañia incondicional.</p>
 
-            <button type="button" class="btn_disponibles">Ver Animales Disponibles → </button>
+            <button type="button" class="btn_disponibles">Ver Animales Disponibles</button>
 
             <button type="button" class="btn_servicios">Conocer Servicios</button>
 
@@ -91,19 +91,151 @@
     </main>
 
     <div class="div_animales_adopcion">
-        <h2>Animales en adopcion</h2>
-        <p>Puedes adoptar mascotas que nos hagan menos gastos</p>
+
+        <h4 style="color: rgb(13, 228, 85);">Adoptar es la mejor opcion</h4>
+        <h2 style="font-weight: bolder;">Animales en adopcion</h2>
         <p>Estos animalitos buscan una oportunidad de ser felices.<br>
             Dales un Lugar en tu hogar y llenalos de amor
         </p>
 
-        <div class="animalesAdopcion" id="animalesEnAdopcion">      
+        <a href="/adopcion.html" class="pagina_Adopcion" target="_blank"> Ver todos en adopcion </a>
 
-        </div>
+        <div class="animalesAdopcion" id="animalesEnAdopcion"></div>
 
     </div>
 
-    <script src="inicio.js"></script>
+    <div class="ContainerNuevosCachorros">
+
+        <div class="nuevosCachorros">
+            <h2>Cachorros Nuevos</h2>
+            <p>Recien llegados a nuestras instalaciones. Todos nuestros cachorros cuentan con pedigrie, vacunas al dia y garantia de salud.</p>
+        </div>
+
+
+        <div class="containerNewPuppies"></div>
+
+    </div>
+
+    <div class="container_featured_products">
+        <div class="textInitial">
+            <h2>Productos en venta</h2>
+            <p>Hay accesorios de primera calidad, lo mejor para tus mascotas.</p>
+        </div>
+
+        <div class="button_acordeon">
+            <button id="eventButtonOne">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <button id="eventButtonTwo">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+
+        </div>
+
+        <div id="div_productos_sale"></div>
+
+    </div>
+
+    <div class="major_communication_appointment">
+
+        <div class="container_element_services">
+
+            <h2>Looking for help with your pet?</h2>
+            <p>Ofrecemos servicios de peluqueria, veterinaria y entrenamiento <br>
+                canino. Agenta tu cita hoy mismo.
+            </p>
+
+            <a href="/scheduleAppointment" target="_blank" class="button_schedule_appointment">schedule appointment</a>
+
+            <div class="animals_sevices_link">
+
+                <nav class="nav_animals_services">
+                    <ul class="ul_animals_services">
+                        <li><a href="/hairSalon" target="_blank" class="linkHairSalon">
+                            <i class="fa-solid fa-scissors" style="color:rgb(13, 228, 85)"></i>Hair Salon
+                        </a></li>
+                        <li><a href="/vetClinic" target="_blank" class="linkVetClinic">
+                            <i class="fa-solid fa-briefcase-medical" style="color:rgb(13, 228, 85)"></i>Vet Clinic
+                        </a></li>
+                        <li><a href="/training" target="_blank" class="linkTraining">
+                            <i class="fa-solid fa-graduation-cap" style="color:rgb(13, 228, 85)"></i>Trainign
+                        </a></li>
+                    </ul>
+                </nav>
+               
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <footer class="footer-end-pages-major">
+
+        <div class="footer-information">
+
+            <div class="divs-sub-footer">
+                <div style="display: flex;" id="main-img">
+                    <img src="logo.png" alt="Logo" style="width: 70px;"/>
+                    <h2>Love Animals</h2>
+                </div>
+
+                <p> Conectando mascotas con familias amorosas desde 2010.
+                    <br>
+                    Tu lugar confiable todo lo relacionado con animales
+                </p>
+            </div>
+
+            <div class="divs-sub-footer">
+                <h3>Explorar</h3>
+                <p>Perros</p>
+                <p>Gatos</p>  
+                 <p>Pequenios animales</p>
+                 <p>Adopciones</p>  
+                
+            </div>
+
+            <div class="divs-sub-footer">
+                <h3>Empresa</h3>
+                <p> Sobre Nosotros</p>
+                <p>Carreras</p>
+                <p>Blog</p>
+                <p>Terminos y condiciones</p>
+            </div>
+
+            <div class="divs-sub-footer">
+                <h3>Unete a la manada</h3>
+                <p>Recibe noticias sobre nuevos cachorros
+                    <br> y ofertas especiales
+                </p>
+                <input type="text" placeholder="Tu correo electronico" style="padding: 8px; border-radius: 14px; border: 1px solid #4982; background-color:rgb(245, 242, 238);">
+                <br>
+                <button type="button" style="font-weight: bold; margin-top: 6px; padding: 8px; width: 185px; background-color:rgb(35, 236, 119); border-radius: 14px; border: none;">Subscribe</button>
+            </div>
+
+        </div>
+
+        
+        <div class="four-words">
+
+            <p>@2025 Love Animals. Todos los derechos reservados.</p>
+
+            <div class="footer-legal">
+                <p>Privacy</p>
+                <p>Segurity</p>
+                <p>Site Map</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- CONTROL + CLICK DERECHO ( PARA PODER ACCEDER DIRECTAMENTE DONDE ESTAN UBICADAS LAS CLASSES DE LOS ELEMNTOS DEL CSS) -->
+    <script type="module" src="inicio.js"></script>
+    <script type="module" src="animalsAdopcion.js"></script>
+    <script type="module" src="productsSale.js"></script>
 
     
 </body>
