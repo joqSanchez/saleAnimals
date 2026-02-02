@@ -7,7 +7,7 @@ function porcentajeReseinas (){
     const datosResenias = JSON.parse(localStorage.getItem('mis_resenias')) || [];
 
     if(datosResenias.length === 0){
-        if(divResenias) divResenias.innerHTML = `<p>Sin valoraciones</p>`;
+        if(divResenias) divResenias.innerHTML = `<p>No hay resenias</p>`;
         return;
     }
 

@@ -163,8 +163,8 @@ function conocerMascota() { // Le quitamos los parámetros
                         </div>
 
                         <div class="div-adoptMe">
-                            <i class="fa fa-commenting" style="background: #d9e3f8; padding: 15px 15px; font-size: 22px; border-radius: 14px;"></i>
-                            <button type="button" style="box-shadow: 0px 0px 12px rgba(255, 140, 0, 0.3); margin-left: 10px; background-color: #f8a915; padding: 15px 15px; font-size: 20px; font-weight: bold; width: 300px; border: none; border-radius: 18px; color: white;">Adopt Me</button>
+                            <i class="fa fa-commenting" style="cursor: pointer; background: #d9e3f8; padding: 15px 15px; font-size: 22px; border-radius: 14px;"></i>
+                            <button type="button" style="cursor: pointer; box-shadow: 0px 0px 12px rgba(255, 140, 0, 0.3); margin-left: 10px; background-color: #f8a915; padding: 15px 15px; font-size: 20px; font-weight: bold; width: 300px; border: none; border-radius: 18px; color: white;">Adopt Me</button>
                         </div>
                         
                     </div>
@@ -227,16 +227,94 @@ function verDetalles() {
         // Limpiamos el contenido previo para que no se acumulen
         containerMajor.innerHTML = '';
 
+        let claseIcono = newAnimal.sexo === 'hembra' ? 'fa fa-venus' : 'fa fa-mars';
+        let colorGenero = newAnimal.sexo === 'hembra' ? '#ff69b4' : '#00aaff';
+        let tamanioIcono = '30px';
+
         const cardNewAnimals = document.createElement('div');
         cardNewAnimals.classList.add('card_NewAnimals');
 
         cardNewAnimals.innerHTML = `
             <div class="details_animals_new">
-                <img src="${newAnimal.URL}" alt="${newAnimal.raza}">
-                <p>- ${newAnimal.raza}</p>
-                <p>- ${newAnimal.personalidad}</p>
-                <p>- ${newAnimal.sexo}</p>
-                <p>- ${newAnimal.peso}</p>
+                <div class="container-foto">
+                    <div class="contenedor-foto">
+                        <img src="${newAnimal.URL}" alt="${newAnimal.raza}">
+                    </div>               
+                    <i class="fa-solid fa-paw" style="margin-left: 20rem; box-shadow: 0px 0px 10px 1px rgba(115, 116, 116, 0.53); color: white; padding: 22px 20px; background-color: #fadd37; border-radius: 30px;"></i>
+                </div>
+
+                <div class="raza">
+                    <p>${newAnimal.raza}</p>
+                </div>                
+
+                <div class="divs-information">
+
+                    <div class="sexo">
+                        <div>
+                            <i class="${claseIcono}" style="color: ${colorGenero}; margin-left: 34px; font-size: ${tamanioIcono};"></i>
+                            <p>${newAnimal.sexo}</p>
+                        </div>
+                    </div>
+
+                    <div class="peso">
+                        <div>
+                            <i class="fa fa-balance-scale" style="font-size: 30px; margin-left: 34px;"></i>
+                            <p>${newAnimal.peso}</p>
+                        </div>
+                    
+                    </div>
+
+                    <div class="personalidad">
+
+                        <div>
+                            <i class="fa fa-brain" style="font-size: 30px; margin-left: 34px;"></i>
+                            <p style="font-size: 14px;">${newAnimal.personalidad}</p>      
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 10px; margin-top: 60px;">
+                    <div style="background-color: #ff7070; border-radius: 14px; width: 150px; padding: 5px; display: flex; gap: 10px;">
+                        <p>
+                            <i class="fa-solid fa-cake-candles" style="font-size: 20px; "></i>
+                            <p style="font-size: 17px; ">${newAnimal.edad}</p>                 
+                        </p>
+                    </div>
+
+                    <div style="background-color: #fd65fd; border-radius: 14px; width: 150px; padding: 5px; display: flex; gap: 10px;">
+                        <p>
+                            <i class="fa-solid fa-tag"  style="font-size: 20px;"></i>
+                            <p>${newAnimal.precio}</p>                  
+                        </p>
+                    </div>
+
+                    <div style="background-color: #34e1ff; border-radius: 14px; width: 150px; padding: 5px; display: flex; gap: 10px;">
+                        <p>
+                            <i class="fa-solid fa-clock-rotate-left"  style="font-size: 20px;"></i>
+                            <p>${newAnimal.estadia}</p>                      
+                        </p>
+
+                    </div>               
+                
+                </div>
+
+                <div style="height: 250px; margin-top: 40px;">
+                    <p>
+                        <i class="fa-solid fa-book-open" style="color: #fc7f6f; font-size: 24px;"></i>
+                        <span style="font-size: 18px; font-family: Arial, sans-serif; font-weight: bolder;">Su Historia</span>      
+                    </p>
+
+
+                    <p style="line-height: 1.4; font-style: italic; color: rgba(71, 70, 70, 0.75); background-color: #fcfcfc; padding: 20px; border-radius: 16px; border-left: 5px solid #fc7f6f;">${newAnimal.historia}</p>
+                </div>
+
+                <div class="div-final">
+                    <div>
+                        <button type="button" style="padding: 10px; background-color: #fd65fd;s">Consultar por el ${newAnimal.raza}</button>
+                    </div>
+                </div>
+                
             </div>
         `;
 

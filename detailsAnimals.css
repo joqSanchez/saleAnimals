@@ -1,0 +1,119 @@
+/* estilos de los cachorros de detailsAnimals.html */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* 1. El contenedor general */
+#div_principal {
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+/* 2. La tarjeta individual */
+.card_NewAnimals {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    height: 950px;
+}
+
+.card_NewAnimals:hover {
+    transform: translateY(-5px); /* Un efecto sencillo al pasar el mouse */
+}
+
+.container-foto{
+    background-color: rgba(250, 196, 255, 0.651);
+    padding: 10px 2px;
+    border-radius: 30px;
+    
+}
+
+.contenedor-foto {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 15px auto ;
+    border: 5px solid #ca8d8d;
+    overflow: hidden; /* Para que la imagen no se salga de las esquinas */
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details_animals_new img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+    /* LA MAGIA: Esto hace que el blanco de la foto sea transparente 
+       y deje ver el amarillo del contenedor-foto */
+    mix-blend-mode: multiply; 
+
+    display: block;
+}
+
+.details_animals_new p{
+    font-weight: bolder;
+}
+
+
+.raza{
+    width: 200px;
+    font-weight: bolder;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(61, 65, 68);
+    font-size: 22px;
+}
+
+.divs-information{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sexo{
+    padding: 9px 1px;
+    width: 100px;
+    background-color: rgb(136, 188, 240);
+    box-shadow: 0px 7px 19px 2px rgb(174, 174, 175);
+    border-radius: 20px;
+}
+
+.sexo p{
+    text-align: center;
+}
+
+.peso{
+    padding: 9px 1px;
+    width: 100px;
+    background-color: rgb(136, 188, 240);
+    box-shadow: 0px 7px 19px 2px rgb(174, 174, 175);
+    border-radius: 20px;
+}
+
+.peso p{
+    text-align: center;
+}
+
+.personalidad{
+    padding: 5px 1px;
+    width: 100px;
+    background-color: rgb(136, 188, 240);
+    box-shadow: 0px 7px 19px 2px rgb(174, 174, 175);
+    border-radius: 20px;
+}
+
+.personalidad p{
+    text-align: center;
+}

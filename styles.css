@@ -226,7 +226,6 @@ body {
     bottom: 20px;
     left: 20px;
     
-    background-color: white; /* Color base blanco como tu ejemplo */
     background-color: rgba(255, 255, 255, 0.9); /* O un blanco con transparencia */
     border-radius: 50px; /* Bordes muy redondeados tipo "píldora" */
     padding: 10px 20px;
@@ -254,13 +253,13 @@ body {
 
 .text-container .textUno {
     font-size: 16px;
-    font-weight: 800;
+    font-weight: bolder;
     margin: 0;
     color: #333;
 }
 
 .text-container .textDos {
-    font-size: 13px;
+    font-size: 18px;
     margin: 0;
     color: #777;
     font-weight: 500;
@@ -336,7 +335,7 @@ body {
     color: rgb(13, 228, 85);
     font-weight: bold;
     text-decoration: none;
-    margin-left: 700px;
+    margin-left: 30rem;
 }
 
 /* Contenedor de los estilos de los nuevos cachorros */
@@ -391,45 +390,6 @@ body {
 }
 
 
-/* estilos de los cachorros de detailsAnimals.html */
-
-/* 1. El contenedor general */
-#div_principal {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding: 20px;
-
-}
-
-/* 2. La tarjeta individual */
-.card_NewAnimals {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    width: 250px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-.card_NewAnimals:hover {
-    transform: translateY(-5px); /* Un efecto sencillo al pasar el mouse */
-}
-
-/* 3. El contenedor de la imagen/detalles */
-.details_animals_new {
-    width: 320px;
-}
-
-.details_animals_new img {
-    width: 250px;       /* Que ocupe todo el ancho de la tarjeta */
-    height: 250px;     /* Altura fija para que todas las tarjetas midan igual */
-    border-radius: 15px 15px 0 0; /* Solo redondea las esquinas de arriba */
-}
-
-.details_animals_new p{
-    font-weight: 600;
-}
 
 
 /* contenedor de los productos en venta  */
@@ -587,6 +547,8 @@ body {
     color: white;
     text-align: left;
 }
+
+
 
 .button_schedule_appointment{
     text-decoration: none;
@@ -757,7 +719,7 @@ body {
         font-size: 11px;
         margin: 0;
         color: #777;
-        font-weight: 500;
+        font-weight: bolder;
     }
 
     .animal_presentation img.animal_1{
@@ -771,6 +733,10 @@ body {
     /* Buttom schedule appointment*/
     .button_schedule_appointment{
         margin-left: 70%;
+    }
+
+    .pagina_Adopcion{
+        text-align: center;
     }
 
 }
@@ -800,7 +766,10 @@ body {
         text-decoration: none;
     }
 
+    .animals_sevices_link{
+        margin-left: 50px;
 
+    }
 
     /* Footer Information*/
     .footer-information{

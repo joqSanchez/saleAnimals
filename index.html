@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>pagina Principal</title>
 </head>
 <body>
@@ -27,15 +28,15 @@
                 
                 <ul>
                     <li class="enlacesMenu"><a href="index.html">Inicio</a></li>
-                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <span class="linea_enlaces" style="width: 100%;"></span>
                     <li class="enlacesMenu"><a href="animales.html">Animales</a></li>
-                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <span class="linea_enlaces" style="width: 100%;"></span>
                     <li class="enlacesMenu"><a href="accesorios.html">Accesorios</a></li>
-                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <span class="linea_enlaces" style="width: 100%; "></span>
                     <li class="enlacesMenu"><a href="servicios.html">Servicios</a></li>
-                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <span class="linea_enlaces" style="width: 100%;"></span>
                     <li class="enlacesMenu"><a href="contacto.html">Contacto</a></li>
-                    <span class="linea_enlaces" style="width: 100%; border-top: 1px solid royalblue;"></span>
+                    <span class="linea_enlaces" style="width: 100%;"></span>
                     <li class="enlacesMenu"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -50,7 +51,7 @@
                 <input type="text" class="search_input" name="search_input" alt="Buscar" placeholder="Buscar..." />
             </div>
             
-            <img class="carrito" src="carrito.png" style="width: 20px;" height="20px;"/>
+            <img class="carrito" id="carrito-panel" src="carrito.png" style="width: 20px;" height="20px;"/>
             <img class="perfil" src="perfil_vacio.png" style="width: 20px;" height="20px;"/>
                 
         </div>
@@ -233,9 +234,12 @@
     </footer>
 
     <!-- CONTROL + CLICK DERECHO ( PARA PODER ACCEDER DIRECTAMENTE DONDE ESTAN UBICADAS LAS CLASSES DE LOS ELEMNTOS DEL CSS) -->
+    <script type="module" src="script.js"></script>
     <script type="module" src="inicio.js"></script>
     <script type="module" src="animalsAdopcion.js"></script>
     <script type="module" src="productsSale.js"></script>
+    <script type="module" src="carrito.js"></script>
+
 
     
 </body>

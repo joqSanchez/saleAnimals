@@ -40,10 +40,10 @@ function showProductsSale() {
                     <p style="font-weight: 600; font-size: 17px;">$${productsSale.precio.toFixed(2)}
                         <strong style="margin-left: 10rem;">
                             <button type="button" class="buttonCompra" 
-                                data-nombre="${productsSale.nombre}" 
-                                data-precio="${productsSale.precio}"
-                                data-categoria="${productsSale.url}">
-                                +
+                              data-nombre="${productsSale.nombre}" 
+                              data-imagen="${productsSale.url}"
+                              data-precio="${productsSale.precio}">
+                              +
                             </button>
                         </strong>
                     </p>
@@ -84,43 +84,43 @@ buttonOne.addEventListener("click", () => {
 // EL EVENTO VA AFUERA DE LA FUNCIÓN (Para que no se multiplique)
 //Esto  abre un panel para confirmar si se enviara el producto al carrito
 document.getElementById("div_productos_sale").addEventListener("click", (e) => {
+
+  // Recibe datos del productos donde se hizo click
   if (e.target.classList.contains("buttonCompra")) {
     const name = e.target.dataset.nombre;
+    const img = e.target.dataset.imagen;
     const price = e.target.dataset.precio;
 
     const panelButtom = document.createElement("div");
-    panelButtom.classList.add("panel_button");
+    panelButtom.classList.add("panel_button");// este es el que se muestra al tocar el buttom +
 
     panelButtom.innerHTML = `
-            <div class="second_div_panel_buttom">
-                <p>¿Enviar ${name} al carrito?</p>
-                <button class="confirmar">Si enviar al carrito</button>
-                <button class="cancelar">No enviar</button>
-            </div>
-        `;
+      <div class="second_div_panel_buttom">
+        <p>¿Enviar ${name} al carrito?</p>
+        <button class="confirmar">Si enviar al carrito</button>
+        <button class="cancelar">No enviar</button>
+      </div>
+    `;
 
     document.body.append(panelButtom);
 
     // I added an event listener to the panelButton div to handle the 'Confirm' and 'Cancel' buttons."
     panelButtom.addEventListener("click", (eventoPanel) => {
-      if (
-        eventoPanel.target.classList.contains("cancelar") ||
-        eventoPanel.target === panelButtom
-      ) {
+      if (eventoPanel.target.classList.contains("cancelar") || eventoPanel.target === panelButtom) {
         panelButtom.remove();
       }
 
       if (eventoPanel.target.classList.contains("confirmar")) {
         // 1. Respuesta inmediata: El usuario ve que algo pasó
         panelButtom.innerHTML = `
-                    <div class="second_div_panel_buttom">
-                        <div class="loader"></div>
-                        <p>Enviando <strong>${name}</strong> al carrito...</p>
-                    </div>
-                `;
+          <div class="second_div_panel_buttom">
+            <div class="loader"></div>
+            <p>Enviando <strong>${name}</strong> al carrito...</p>
+          </div>
+        `;
 
         setTimeout(() => {
-          shoppingCart(name, price);
+          shoppingCart(name,img, price);
           console.log("enviado correctamente!");
 
           // Esto crea el boton "x" de cerrar
@@ -133,10 +133,10 @@ document.getElementById("div_productos_sale").addEventListener("click", (e) => {
             panelButtom.remove();
           });
 
-          // Se agrega un panel que mustra el exito del envio
+          // Se agrega un panel que muestra el exito del envio
           panelButtom.innerHTML = `
                         <div class="second_div_panel_buttom">
-                            <p>Enviado correctamente</p>
+                          <p>Enviado correctamente</p>
                         </div>
                     `;
 
