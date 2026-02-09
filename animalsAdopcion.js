@@ -310,9 +310,10 @@ function verDetalles() {
                 </div>
 
                 <div class="div-final">
-                    <div>
-                        <button type="button" style="padding: 10px; background-color: #fd65fd;s">Consultar por el ${newAnimal.raza}</button>
-                    </div>
+                    <p>
+                        <button type="button" style="margin-right: 10px; color: #ffffff; font-size: 14px; width: 250px; font-weight: bolder; padding: 14px; border-radius: 16px; border:none; background-color: #fd65fd;">Consultar por el ${newAnimal.raza}</button>
+                        <i class="fa-solid fa-share-nodes" style="border-radius: 16px; background-color: #95979321; padding: 15px 15px; font-size: 22px; text-aling: center;"></i>
+                    </p>
                 </div>
                 
             </div>

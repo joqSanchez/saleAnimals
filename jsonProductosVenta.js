@@ -1,5 +1,3 @@
-
-
 export const productosVenta = [
     {
         id: 1,

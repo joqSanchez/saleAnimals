@@ -6,8 +6,8 @@ body {
 
 .header_container {
     position: relative;
-    background-color: #f0723773;
-    border-bottom: 1px solid rgb(113, 211, 195);
+    background-color: #ffffff73;
+    border-bottom: 1px solid rgb(61, 70, 68);
     
     border-radius: 4px;
     padding: 10px 25px;
@@ -33,7 +33,7 @@ body {
     margin: 0; /* Elimina el margen por defecto de los h2 que empuja el header */
     font-size: 1.5rem;
     font-style: italic;
-    color: rgb(29, 133, 127);
+    color: rgb(36, 37, 37);
     white-space: nowrap; /* Evita que el nombre se parta en dos líneas */  
 }
 
@@ -120,9 +120,8 @@ body {
 
 
 .carrito, .perfil {
-    padding: 4px 7px;
+    padding: 5px 8px;
     border-radius: 12px;
-    border: 1px solid #005B70;
     cursor: pointer;
 }
 
@@ -168,6 +167,7 @@ body {
     border-radius: 18px;
     margin: 10px;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .btn_servicios{
@@ -181,6 +181,7 @@ body {
     border-radius: 18px;
     margin: 10px;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .div_family_cheerful{
@@ -796,13 +797,13 @@ body {
     /* schedule apointment button*/
     .button_schedule_appointment{
         text-align: center;
-        margin-left: 4rem;
+
     }
 
     /* UL animals services*/
     .ul_animals_services{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
 }
@@ -845,7 +846,6 @@ body {
     /* Buttom schedule appointment*/
 
     .button_schedule_appointment{
-        margin-left: 30%;
         backdrop-filter: blur(4px);
         background-color: #d3d2d2;
         opacity: 0.6;

@@ -1,26 +1,140 @@
-.divMainCard{
+/* El fondo oscuro que cubre toda la web */
+.divMainCard {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(230, 229, 229, 0.397); /* Fondo negro transparente */
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurecemos un poco más para enfoque */
     display: flex;
-    justify-content: center; /* Centra horizontal */
-    align-items: center;     /* Centra vertical */
-    z-index: 1000;           /* Asegura que esté por encima de todo */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.card-cart{
-    max-width: 300px;
-    padding: 80px;
-    background-color: aliceblue;
+/* El panel beige donde aparecen los productos */
+.containerMainCart {
+    position: relative;
+    background-color: #fdf5e6; /* Tu antiquewhite */
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 80vh; /* Para que si hay muchos productos, salga scroll */
+    overflow-y: auto;
+    position: relative; /* Para que el botón X se posicione bien */
 }
 
-.panel-introduccion{
-    background-color: rgb(21, 253, 253);
-    padding: 5px 30px;
+/* El botón de cerrar en la esquina */
+.cerrar-panel-carrito {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.panel-introduccion {
+    background-color: #15fdfd;
+    padding: 10px;
     border-radius: 16px;
-    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.card-products {
+    background-color: aliceblue;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Este es el contenedor que bloquea la interacción */
+.panel-confirmacion {
+    position: absolute; /* Se posiciona respecto a containerMainCart */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente blanco */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    z-index: 2000; /* Asegura que esté por encima de los productos */
+    border-radius: 10px; /* Para que coincida con el panel del carrito */
+}
+
+/* Estilo para los botones dentro de la confirmación */
+.confirmBuy, .canceledBuy {
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.confirmBuy { background-color: #deff4b; }
+.canceledBuy { background-color: #ff4b4b; color: white; }
+
+.loader-buy{
+    margin-top: 20px;
+    padding: 4px;
+    background-color: #15fdfd;
+    border-radius: 6px;
+    border: 1px dashed rgba(64, 65, 62, 0.658);
+    overflow: hidden;
+}
+
+.loader-eliminated{
+    width: 110px;
+    background-color: #f16868;
+    padding: 2px;
+    border-radius: 8px;
+    animation: cargar 2s ease-in-out infinite;
+    color: #464444;
+}
+
+@keyframes cargar {
+    0% { 
+        width: 0px; 
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% { 
+        /* Al final llega a su ancho total */
+        width: 100%; 
+    }
+}
+
+.carga-lista {
+    /* position: relative; permite que se ubique en el flujo del panel */
+    position: relative; 
+    width: 80px;
+    height: 40px;
+    background-color: #26de43; /* Cambié azul por el verde de Love Animals */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px auto; /* Lo centra horizontalmente */
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }

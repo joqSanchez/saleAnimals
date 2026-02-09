@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// FUNCION QUE MUESTRA EL PORCENTAJE DE RESENIAS DENTRO DE LA PAGINA COMENTARIOS
 function porcetajeDeResenias() {
     // 1. Declaramos ambos contenedores (el de la página de comentarios y el del inicio)
     const contenedorPrincipal = document.getElementById('porcentajeResenias');
@@ -166,7 +167,6 @@ function fechaEstadoComentario() {
     seleccionTiempoComents.addEventListener('change', () => {
         aplicarOrdenActual();
     });
-
 }
 
 // Esta funcion dibuja las reseñas en el HTML

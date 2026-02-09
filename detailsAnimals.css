@@ -21,7 +21,7 @@ body {
     width: 400px;
     margin: 0 auto;
     padding: 15px;
-    height: 950px;
+    height: 1150px;
 }
 
 .card_NewAnimals:hover {
@@ -115,5 +115,13 @@ body {
 }
 
 .personalidad p{
+    text-align: center;
+}
+
+.div-final{
+    border-top:2px solid #ca8d8d;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
 }

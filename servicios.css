@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.headerServices{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(143, 245, 143);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.headerServices h2{
+    font-size: 20px;
+}
+
+.headerServices a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(250, 112, 102, 0.897);
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.information-main-div{
+    width: 55%; 
+    height: auto; 
+    min-height: 230px; 
+    background-color: #8EB2F4; 
+    margin: 30px auto 0 auto; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    padding-bottom: 20px;
+}
+
+.containerSlider{
+    width: 850px; 
+    background-color: #FFE6E6; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.primero{
+    cursor: pointer; 
+    width: 200px;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
+    display: inline-block; /* Para que el transform scale funcione bien */
+    border-radius: 12px;
+}
+
+.imagenesSliders {
+    cursor: pointer; 
+    width: 200px;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transiciones suaves */
+    display: inline-block; /* Para que el transform scale funcione bien */
+    border-radius: 12px;
+}
+
+/* Esta clase ahora solo se encarga de la opacidad */
+.desactivadas {
+    opacity: 0.3; /* Un poco más bajo para que resalte más la activa */
+}
+
+.div-featured-services{
+    max-width: 600px;
+    padding: 15px;
+    background-color: rgb(241, 230, 214);
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-div-featured-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.divs-featured-services{
+    border-radius: 12px;
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 0px #202020;
+}
+
+.learnMore{
+    font-weight: bolder;
+    color: turquoise;
+    font-size: 18px;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+.card-featured-services {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Lo centra perfectamente */
+    background-color: #8EB2F4;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1001;
+    text-align: center;
+}

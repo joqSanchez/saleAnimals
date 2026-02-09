@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.containerAccesorios{
+    display: flex;
+    flex-wrap: wrap; /* Para que ajusten en varias filas */
+    gap: 40px; /* Espacio entre tarjetas */
+    justify-content: center; /* Centrar tarjetas */
+}
+
+.div_accesorios{
+    background-color: rgb(255, 255, 255);
+}
+
+.card-accesorios{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 1px #443;
+    width: 350px;
+    padding: 10px;
+    border-radius: 22px;
+}
+
+.card-information{
+    margin-top: 20px;
+    padding: 5px;
+}

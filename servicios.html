@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="headerServices">
+        <h2>Tenemos los mejores servicios para tu mascota</h2>
+        <a href="./scheduleAppointment">Schedule Appointment</a>
+    </header>
+
+    <div class="information-main-div">
+
+        <div style="display: flex; align-items: center; flex-direction: column; padding: 10px;">
+            <h3>Servicios de Veterinarios capacitados</h3>
+        </div>
+
+        <div style="width: 100%; height: 2px; background-color: black;"></div>
+
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; padding: 0 20px;">
+            <p style="flex: 1; min-width: 250px;">
+                Ofrecemos los mejores servicios para <br> 
+                la salud de tu mascota, tenemos muy buena atención al cliente <br> 
+                y buenos precios para la atención a tu mascota
+            </p>
+            <img src="https://universidadeuropea.com/resources/media/images/medicina-veterinaria-800x450.width-640.jpg" 
+                alt="veterinario" 
+                style="width: 200px; height: 131px; margin-top: 20px; border-radius: 10px; object-fit: cover;"
+            >
+        </div>
+    </div>
+
+    <div class="information-main-div">
+
+        <div style="display: flex; align-items: center; flex-direction: column; padding: 10px;">
+            <h3>Servicios de Estética y Cuidado</h3>
+        </div>
+
+        <div style="width: 100%; height: 2px; background-color: black;"></div>
+
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; padding: 0 20px;">
+            <p style="flex: 1; min-width: 250px;">
+                <span style="font-weight: bolder;">Dejamos una buena estética para tu mascota</span><br>
+                <ul>
+                    <li>Cuidados de calidad</li>
+                    <li>Tratamientos Faciales</li>
+                    <li>Depilación</li>
+                    <li>Tratamientos Corporales</li>
+                </ul>
+            </p>
+            <img src="https://universidadeuropea.com/resources/media/images/medicina-veterinaria-800x450.width-640.jpg" 
+                alt="veterinario" 
+                style="width: 200px; height: 131px; margin-top: 20px; border-radius: 10px; object-fit: cover;"
+            >
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;" >
+        <div class="containerSlider">
+            <div class="slider">
+                <img src="https://img.freepik.com/foto-gratis/mujer-corta-perro-perro-sentado-sofa-raza-yorkshire-terrier_1157-46558.jpg?semt=ais_hybrid&w=740&q=80"  class="imagenesSliders" alt="estilos1">
+                <img src="https://img.freepik.com/foto-gratis/hermosos-retratos-mascotas-perros_23-2149218454.jpg?semt=ais_hybrid&w=740&q=80" alt="estilos2" class="primero">
+                <img src="https://www.vetformacion.com/wp-content/uploads/2018/02/48.jpg" alt="estilos3" class="imagenesSliders">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw5PqHxALhGBo-8CUJpYTgLcscOWl-90afnw&s" alt="estilos4" class="imagenesSliders">
+            </div> 
+        </div>
+
+        <div style="display: flex; align-items: center; width: 350px; flex-direction: column; padding: 10px; background-color: #FFE6E6; border-radius: 6px; border: 1px solid black;">
+
+            <h3 style="padding: 8px; background-color: #77EBFF; width: 180px; border-radius: 6px;">Confía en nosotros!</h3>
+            <div id="extractInformation"></div>
+        </div>
+
+    </div>
+
+    <div class="div-featured-services">
+        
+        <h2>Featured Services</h2>
+
+        <div class="second-div-featured-services">
+
+            <div class="divs-featured-services">
+                <h3 class="nameServices"  data-nombre="Paseo de mascotas">Paseo de mascotas</h3>
+                <p>Ofrecemos paseos regulares para mantener a tu mascota activa y feliz.</p>
+                <button type="button" class="learnMore">Learn More ></button>
+            </div>
+
+            <div class="divs-featured-services">
+                <h3 class="nameServices"  data-nombre="Asesoria Nutricional">Asesoria Nutricional</h3>
+                <p>Asesoramos sobre la alimentación adecuada para tu mascota según su raza, edad y necesidades.</p>
+                <button type="button" class="learnMore">Learn More ></button>
+            </div>
+
+            <div class="divs-featured-services">
+                <h3 class="nameServices"  data-nombre="Servicios Complementarios">Servicios Complementarios</h3>
+                <p>Ofrecemos servicios adicionales para garantizar el bienestar de tu mascota.</p>
+                <button type="button" class="learnMore">Learn More ></button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="namesServices.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            encimaImg();
+        })
+
+        function encimaImg() {
+            const imagenes = document.querySelectorAll('.imagenesSliders, .primero');
+            const primero = document.querySelector('.primero');
+
+            const mainSliders = document.querySelector('.slider');
+            const containerSliders = document.querySelector('.containerSlider');
+            
+            const handleResponsiveness = (e) => {
+                if (e.matches) { // Si la pantalla es menor a 1250px
+                    mainSliders.style.display = 'flex';
+                    mainSliders.style.flexDirection = 'column';
+                    mainSliders.style.alignItems = 'center';
+                    mainSliders.style.height = 'auto'; 
+                    containerSliders.style.width = '250px';
+                } else {
+                    // Aquí deberías resetear los estilos para pantallas grandes
+                    mainSliders.style.flexDirection = 'row'; 
+                    containerSliders.style.width = 'initial';
+                }
+            };
+
+            // Crear el listener de medios
+            const mediaQuery = window.matchMedia('(max-width: 1250px)');
+
+            // Ejecutar al cargar y cada vez que cambie el tamaño
+            mediaQuery.addEventListener('change', handleResponsiveness);
+            handleResponsiveness(mediaQuery);
+            
+            // 1. ESTADO INICIAL: La primera brilla, las otras no
+            imagenes.forEach(img => {
+                if (img === primero) {
+                    img.style.transform = 'scale(1.1)';
+                    img.style.zIndex = '10';
+                    img.classList.remove('desactivadas');
+                } else {
+                    img.style.transform = 'scale(0.8)';
+                    img.style.zIndex = '1';
+                    img.classList.add('desactivadas');
+                }
+
+                // 2. EVENTO: Cuando el mouse entra a CUALQUIERA
+                img.addEventListener('mouseenter', (evento) => {
+                    const seleccionada = evento.target;
+
+                    // RESET TOTAL: Todas se apagan (incluida la primera)
+                    imagenes.forEach(i => {
+                        i.style.transform = 'scale(0.8)';
+                        i.style.zIndex = '1';
+                        i.classList.add('desactivadas');
+                    });
+
+                    // RESALTE: Solo la que tiene el mouse encima se agranda
+                    seleccionada.style.transform = 'scale(1.1)';
+                    seleccionada.style.zIndex = '10';
+                    seleccionada.classList.remove('desactivadas');
+                    
+                });
+
+                
+            });
+
+        }
+
+
+        const contenedorPrincipal = document.getElementById('extractInformation');
+        const datosArray = JSON.parse(localStorage.getItem('mis_resenias')) || [];
+
+        contenedorPrincipal.innerHTML = '';
+
+        // 0. Filtramos el array ORIGINAL (datosArray) para obtener solo los de 5 estrellas
+        // 1. Filtramos por 5 estrellas
+        // 2. Cortamos para quedarnos con los últimos 3 (.slice)
+        // 3. Recorremos ese resultado (.forEach)
+        const reseñasTop = datosArray.filter(c => c.estrellas === 5).slice(-3);
+
+        // 2. Ahora recorremos solo esas reseñas(estrellas) filtradas
+        reseñasTop.forEach(resenia => {
+
+            let div = document.createElement('div');
+            div.className = 'card-comentario';
+
+            // Creamos las estrellas doradas para esta reseña
+            let estrellasHtml = '';
+
+            // Como se filtraron solo resenias de 5 estrellas
+            for(let i = 0; i < 5; i++) {
+                estrellasHtml += '<i class="fa-solid fa-star" style="color: gold;"></i>';
+            }
+
+            // ${resenia.comentario} - porque se filtraron los de 5 estrellas y solo se agregan sus comentarios
+            div.innerHTML = `
+                <div style="background: white; padding: 11px; margin: 5px; border-radius: 5px;">
+                    <div style="text-align: center;">Estrellas: ${estrellasHtml}</div>
+                    <div style="width: 100%; height: 1px; background-color: black; margin-top: 8px;"></div>
+                    <p style="width: 200px; overflow-wrap: break-word; word-break: break-word;">${resenia.comentario}</p>
+                </div>
+            `;
+
+            contenedorPrincipal.append(div);
+        });
+
+
+    </script>
+
+</body>
+</html>
